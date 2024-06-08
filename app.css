@@ -1,0 +1,43 @@
+#myDiv{
+    height: 100vh; /* Adjusted height value */
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 40%;
+  overflow: auto;
+  max-width: 500px; /* Set the maximum width of the modal */
+  width: 100%; /* Set the width to 100% to ensure responsiveness */
+  margin: 0 auto; /* Center the modal horizontally */
+  --modal-background: gray; /* Default background */
+}
+
+.modal-content {
+ background: var(--modal-background); /* Use CSS variable for background */
+  margin: 10% auto;
+  padding: 5px 20px; /* Consolidated padding properties */
+  max-width: 500px;
+  width: 90%; /* Adjusted width value */
+  color: white;
+  border-radius: 10px; /* Added border-radius for better appearance */
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 0px; /* Adjusted margin-top to align close button */
+}
+
+.close:hover,
+.close:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
